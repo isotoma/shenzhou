@@ -128,7 +128,7 @@ class VMBuilder:
         "execscript": os.path.realpath(os.path.join(os.curdir, "postboot.sh")),
         "addpkg": [
             "standard^", "server^", "gpgv", "openssh-server", "buildbot",
-            "pbuilder", "git-buildpackage",
+            "dhcp3-client", "pbuilder", "git-buildpackage",
             ],
     }
 
