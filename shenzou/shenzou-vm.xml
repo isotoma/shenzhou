@@ -1,4 +1,4 @@
-simple_domain = """<domain type='kvm'>
+<domain type='kvm'>
   <name>%(name)s</name>
   <memory>1048576</memory>
   <currentMemory>1048576</currentMemory>
@@ -40,4 +40,4 @@ simple_domain = """<domain type='kvm'>
       <model type='cirrus' vram='9216' heads='1'/>
     </video>
   </devices>
-</domain>"""
+</domain>
