@@ -6,7 +6,7 @@ We are now testing on a lucid amd64 host. It should work on karmic and on i386, 
 
 Get the source. Currently we need Git buildbot, and that is provided via Git submodules.
 {{{
-git clone git://github.com/Jc2k/shenzou
+git clone git://github.com/Jc2k/shenzhou
 git submodule update --init
 }}}
 
@@ -27,7 +27,7 @@ sudo usermod -a -G libvirtd username
 
 Build the master.
 {{{
-cd shenzou
+cd shenzhou
 buildout2.6
 }}}
 
@@ -45,6 +45,6 @@ rm -rf ubuntu
 
 To start the builder:
 {{{
-./bin/shenzou start
+./bin/shenzhou start
 }}}
 

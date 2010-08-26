@@ -8,5 +8,5 @@ function define {
 }
 
 
-define shenzou network.xml
+define shenzhou network.xml
 

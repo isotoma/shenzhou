@@ -23,7 +23,7 @@
       <target dev='vda' bus='virtio'/>
     </disk>
     <interface type='network'>
-      <source network='shenzou'/>
+      <source network='shenzhou'/>
       <mac address='%(macaddr)s'/>
       <model type='virtio'/>
     </interface>
