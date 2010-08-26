@@ -1,0 +1,9 @@
+Name: incoming
+IncomingDir: incoming
+Allow: #slurp
+#for $d in $dists
+$d #slurp
+#end for
+
+Cleanup: on_deny on_error
+Tempdir: incomingtmp
