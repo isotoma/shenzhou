@@ -53,7 +53,7 @@ slavename = socket.gethostname()
 passwd = "%(slave_password)s"
 keepalive = 600
 usepty = 0
-umask = None
+umask = 022
 maxdelay = 300
 rotateLength = 1000000
 maxRotatedFiles = None
@@ -105,7 +105,7 @@ root    ALL=(ALL) ALL
 %%admin ALL=(ALL) ALL
 
 # Buildbot can install packages
-minion ALL = (root) NOPASSWD: /usr/lib/pbuilder/pbuilder-satisfydepends-aptitude
+minion ALL = (root) NOPASSWD: /usr/lib/pbuilder/pbuilder-satisfydepends
 HERE
 """
 
@@ -128,7 +128,7 @@ class VMBuilder:
         "execscript": os.path.realpath(os.path.join(os.curdir, "postboot.sh")),
         "addpkg": [
             "standard^", "server^", "gpgv", "openssh-server", "buildbot",
-            "dhcp3-client", "pbuilder", "git-buildpackage",
+            "dhcp3-client", "pbuilder", "git-buildpackage", "aptitude", "devscripts",
             ],
     }
 
