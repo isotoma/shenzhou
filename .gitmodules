@@ -1,3 +1,0 @@
-[submodule "thirdparty/buildbot"]
-	path = thirdparty/buildbot
-	url = git://github.com/djmitche/buildbot
