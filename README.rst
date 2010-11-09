@@ -5,10 +5,9 @@ Shenzou exists primarily to showcase the virtualization support recently added t
 
 We are now testing on a lucid amd64 host. It should work on karmic and on i386, but these are not currently supported.
 
-Get the source. Currently we need Git buildbot, and that is provided via Git submodules::
+Get the source::
 
     git clone git://github.com/Jc2k/shenzhou
-    git submodule update --init
 
 
 Make sure apt is up to date::
@@ -26,7 +25,7 @@ Make sure user is in libvirtd group. You will need a fresh login for this to tak
     sudo usermod -a -G libvirtd username
 
 
-Build the master::
+Have you logged out and back in? Do so :) Now build the master::
 
     cd shenzhou
     buildout2.6
